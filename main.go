@@ -8,7 +8,13 @@ import (
 func main() {
 	r := gin.Default()
 
-	// Ping handler
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"name": "home",
+			"url":  "https://cloudip-vendors.sdubs.org",
+		})
+	})
+
 	r.GET("/aws", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"name": "aws",
