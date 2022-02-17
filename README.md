@@ -21,3 +21,9 @@ You can replace the `<vendor>` param with any of the following:
 **IPv4 and IPv6 Ranges**
 
 `https://cloudip-sources.sdubs.org/<vendor>/ranges/all`
+
+## CLI Version
+
+There is also a CLI tool which retrieves the IP ranges, and can also export them to CSV if you choose. That can be downloaded here:
+
+[cloudip](https://github.com/scottdware/cloudip/releases/latest)
