@@ -73,8 +73,10 @@ func main() {
 
 	r.GET("/aws", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"name": "aws",
-			"url":  awsURL,
+			"name":    "aws",
+			"url":     awsURL,
+			"region":  "ap-east-1, ap-northeast-1, ap-northeast-2, ap-northeast-3, ap-south-1, ap-southeast-1, ap-southeast-2, ca-central-1, cn-north-1, cn-northwest-1, eu-central-1, eu-north-1, eu-west-1, eu-west-2, eu-west-3, sa-east-1, us-east-1, us-east-2, us-gov-east-1, us-gov-west-1, us-west-1, us-west-2, GLOBAL",
+			"service": "AMAZON, AMAZON_APPFLOW, AMAZON_CONNECT, API_GATEWAY, CHIME_MEETINGS, CHIME_VOICECONNECTOR, CLOUD9, CLOUDFRONT, CLOUDFRONT_ORIGIN_FACING, CODEBUILD, DYNAMODB, EBS, EC2, EC2_INSTANCE_CONNECT, GLOBALACCELERATOR, KINESIS_VIDEO_STREAMS, ROUTE53, ROUTE53_HEALTHCHECKS, ROUTE53_HEALTHCHECKS_PUBLISHING, ROUTE53_RESOLVER, S3, WORKSPACES_GATEWAYS",
 		})
 	})
 
@@ -191,8 +193,9 @@ func main() {
 
 	r.GET("/azure", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"name": "azure",
-			"url":  azureURL,
+			"name":   "azure",
+			"url":    azureURL,
+			"region": "australiacentral, australiacentral2, australiaeast, australiasoutheast, brazilsouth, brazilse, canadacentral, canadaeast, centralindia, centralus, centraluseuap, eastasia, eastus, eastus2, eastus2euap, eastusslv, usstagee, centralfrance, southfrance, germanyn, germanywc, isrealcentral, japaneast, japanwest, jioindiacentral, jioindiawest, koreacentral, northcentralus, northeurope, norwaye, norwayw, polandcentral, qatarcentral, southafricanorth, southafricawest, southcentralus, southindia, southeastasia, swedencentral, swedensouth, switzerlandn, switzerlandw, taiwannorth, taiwannorthwest, uaecentral, uaenorth, uknorth, uksouth, uksouth2, ukwest, westcentralus, westeurope, westindia, westus, westus2, westus3, koreasouth, usstagec, austriaeast, italynorth, belgiumcentral, brazilne, chilec, easteurope, malaysiawest, mexicocentral, newzealandnorth, northeurope2, spaincentral",
 		})
 	})
 
