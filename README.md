@@ -24,6 +24,6 @@ You can replace the `<vendor>` param with any of the following:
 
 ## CLI Version
 
-There is also a CLI tool which retrieves the IP ranges, and can also export them to CSV if you choose. That can be downloaded here:
+There is also a CLI tool which retrieves the IP ranges, and can also export them to CSV if you choose. That tool can be downloaded here:
 
 [cloudip](https://github.com/scottdware/cloudip/releases/latest)
